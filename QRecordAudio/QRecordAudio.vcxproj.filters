@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\video">
+      <UniqueIdentifier>{a055f46b-3fc6-4212-82e4-85b9a80b9b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\video">
+      <UniqueIdentifier>{d8e3bf01-399a-4167-8168-c4c1487af149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{5b39076a-84ec-4757-9dca-e6fd6daa184b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{581e95ed-a7f5-492e-ab14-ae88642513b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\encode">
+      <UniqueIdentifier>{7ae985c8-d287-44e3-874c-19705dc25251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\encode">
+      <UniqueIdentifier>{92767326-0ec1-4486-8651-11df7cbd9e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\decode">
+      <UniqueIdentifier>{9a24c37e-31ba-43e0-8f35-e513b98c6b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decode">
+      <UniqueIdentifier>{f74b402b-d518-4c86-bf00-80244d18c01e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QRecordAudio.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="QRecordAudio.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="QRecordAudio.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="QRecordAudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video.cpp">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="playvideo.cpp">
+      <Filter>Source Files\video</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="playaudio.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_h264.cpp">
+      <Filter>Source Files\encode</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_h264.cpp">
+      <Filter>Source Files\decode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="video.h">
+      <Filter>Header Files\video</Filter>
+    </QtMoc>
+    <QtMoc Include="playvideo.h">
+      <Filter>Header Files\video</Filter>
+    </QtMoc>
+    <QtMoc Include="playaudio.h">
+      <Filter>Header Files\audio</Filter>
+    </QtMoc>
+    <QtMoc Include="audio.h">
+      <Filter>Header Files\audio</Filter>
+    </QtMoc>
+    <QtMoc Include="encode_h264.h">
+      <Filter>Header Files\encode</Filter>
+    </QtMoc>
+    <QtMoc Include="decode_h264.h">
+      <Filter>Header Files\decode</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
