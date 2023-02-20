@@ -45,6 +45,12 @@
     <Filter Include="Source Files\decode">
       <UniqueIdentifier>{f74b402b-d518-4c86-bf00-80244d18c01e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\capture">
+      <UniqueIdentifier>{71e3ed55-567b-4eca-bcd3-faacccd4d804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\capture">
+      <UniqueIdentifier>{76a39bec-e6ad-4d4d-b8f4-a406b8191de0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="QRecordAudio.qrc">
@@ -82,6 +88,9 @@
     <ClCompile Include="decode_h264.cpp">
       <Filter>Source Files\decode</Filter>
     </ClCompile>
+    <ClCompile Include="capture.cpp">
+      <Filter>Source Files\capture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="video.h">
@@ -101,6 +110,9 @@
     </QtMoc>
     <QtMoc Include="decode_h264.h">
       <Filter>Header Files\decode</Filter>
+    </QtMoc>
+    <QtMoc Include="capture.h">
+      <Filter>Header Files\capture</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>

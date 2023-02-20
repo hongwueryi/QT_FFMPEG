@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>607</width>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -131,13 +131,26 @@
      <string>decode_h264</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="BTN_CAPTURE_SCREEN">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>capturescreen</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
+     <width>607</width>
      <height>26</height>
     </rect>
    </property>

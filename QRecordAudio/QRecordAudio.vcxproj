@@ -94,6 +94,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="capture.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
     <ClCompile Include="decode_h264.cpp" />
     <ClCompile Include="encode_h264.cpp" />
     <ClCompile Include="playvideo.cpp" />
@@ -115,6 +121,7 @@
   <ItemGroup>
     <QtMoc Include="encode_h264.h" />
     <QtMoc Include="decode_h264.h" />
+    <QtMoc Include="capture.h" />
     <ClInclude Include="pch.h" />
     <QtMoc Include="playvideo.h" />
     <QtMoc Include="video.h" />

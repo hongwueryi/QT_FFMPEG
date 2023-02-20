@@ -6,6 +6,7 @@
 #include "playvideo.h"
 #include "encode_h264.h"
 #include "decode_h264.h"
+#include "capture.h"
 
 QRecordAudio::QRecordAudio(QWidget *parent)
     : QMainWindow(parent)
@@ -17,6 +18,7 @@ QRecordAudio::QRecordAudio(QWidget *parent)
     CVideoPlayer* pPlayVideo = new CVideoPlayer(this);
     CEncode* pEncode = new CEncode(this);
     CDecode* pDecode = new CDecode(this);
+    CCapture* pCapture = new CCapture(this);
     connect(ui.btn_start, &QPushButton::clicked, pAudio, &CRecordAudio::Init);
     connect(ui.btn_stop, &QPushButton::clicked, pAudio, &CRecordAudio::UnInit);
     connect(ui.btn_showspec, &QPushButton::clicked, pAudio, &CRecordAudio::showSpec);
@@ -28,4 +30,5 @@ QRecordAudio::QRecordAudio(QWidget *parent)
 
     connect(ui.BTN_ENCODE_H264, &QPushButton::clicked, pEncode, &CEncode::startEncode);
     connect(ui.BTN_DECODE_H264, &QPushButton::clicked, pDecode, &CDecode::startDecode);
+    connect(ui.BTN_CAPTURE_SCREEN, &QPushButton::clicked, pCapture, &CCapture::CaptureScreen);
 }
