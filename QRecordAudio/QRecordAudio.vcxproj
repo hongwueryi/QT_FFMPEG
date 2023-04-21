@@ -64,7 +64,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\ffmpeg;$(SolutionDir)lib\SDL2.24;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>avdevice.lib;avformat.lib;avutil.lib;avfilter.lib;avcodec.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>avdevice.lib;avformat.lib;avutil.lib;avfilter.lib;avcodec.lib;swscale.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -103,6 +103,7 @@
     <ClCompile Include="decode_h264.cpp" />
     <ClCompile Include="encode_h264.cpp" />
     <ClCompile Include="playvideo.cpp" />
+    <ClCompile Include="recordscreen.cpp" />
     <ClCompile Include="video.cpp" />
     <QtRcc Include="QRecordAudio.qrc" />
     <QtUic Include="QRecordAudio.ui" />
@@ -119,6 +120,7 @@
     <QtMoc Include="playaudio.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="recordscreen.h" />
     <QtMoc Include="encode_h264.h" />
     <QtMoc Include="decode_h264.h" />
     <QtMoc Include="capture.h" />

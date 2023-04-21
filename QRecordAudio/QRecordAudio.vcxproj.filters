@@ -91,6 +91,9 @@
     <ClCompile Include="capture.cpp">
       <Filter>Source Files\capture</Filter>
     </ClCompile>
+    <ClCompile Include="recordscreen.cpp">
+      <Filter>Source Files\capture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="video.h">
@@ -112,6 +115,9 @@
       <Filter>Header Files\decode</Filter>
     </QtMoc>
     <QtMoc Include="capture.h">
+      <Filter>Header Files\capture</Filter>
+    </QtMoc>
+    <QtMoc Include="recordscreen.h">
       <Filter>Header Files\capture</Filter>
     </QtMoc>
   </ItemGroup>
